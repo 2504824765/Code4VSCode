@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 选择器</title>
+
+    <style>
+        /* 元素选择器 */
+        h2 {
+            color: green;
+        }
+
+        .highlight {
+            color: aliceblue;
+            background-color: blue;
+        }
+
+        #header {
+            color: rgb(48, 28, 76);
+            font-size: larger;
+            font-family: "KaiTi";
+        }
+
+        .father > .son {
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>不同类型的 CSS 选择器</h1>
+
+    <h2>这是一个元素选择器事例</h2>
+
+    <h3>这是一个类选择器事例</h3>
+    <h3 class="highlight">这是另一个类选择器事例</h3>
+
+    <h4 id="header">这是一个id选择器事例</h4>
+
+    <div class="father">
+        <p class="son">这是一个字元素选择器事例</p>
+        <p class="daughter">这是另一个字元素选择器事例</p>
+    </div>
+</body>
+</html>

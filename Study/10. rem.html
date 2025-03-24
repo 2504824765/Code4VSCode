@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function setFontSize() {
+        var width = document.documentElement.clientWidth;
+        var fontSize = width / 10;
+        document.documentElement.style.fontSize = fontSize + 'px';
+    }
+
+    setFontSize();
+
+    window.onresize = function() {
+        setFontSize();
+    }
+
+    addEventListener('resize', setFontSize);
+</script>
+<style>
+    .box {
+        width: 10rem;
+        height: 10rem;
+        background-color: red;
+        margin-bottom: 10px;
+    }
+    .box-px {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<body>
+    
+</body>
+    <div class="box-px"></div>
+    <div class="box rem"></div></div>
+</html>
